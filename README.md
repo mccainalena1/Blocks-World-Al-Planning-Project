@@ -5,7 +5,8 @@
 [![CMake](https://img.shields.io/badge/Build-CMake-green)]()  
 
 ## 📖 Project Overview  
-C++ implementation of the classic Blocks World AI planning problem. Includes source code, Visual Studio solution files, and deliverables (report, slides). Demonstrates planning strategies and outcomes using both direct compilation and CMake builds.  
+C++ implementation of the classic Blocks World AI planning problem. 
+Includes source code, Visual Studio solution files, and deliverables (report, slides), with build support via g++ and CMake.  
 
 ## 📂 Repository Structure  
 ```
