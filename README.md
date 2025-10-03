@@ -1,48 +1,58 @@
-# Blocks World AI Planning (C++)
+# 📦 Blocks World AI Planning  
 
-[![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![C++](https://img.shields.io/badge/C++-17-blue)]()  
+[![CMake](https://img.shields.io/badge/Build-CMake-green)]()  
 
-C++ implementation of the classic **Blocks World** AI planning problem. This repo contains **only the C/C++ source and headers**, organized under `src/`. The original report and slides are kept under `results/` for reference.
+## 📖 Project Overview  
+C++ implementation of the classic Blocks World AI planning problem. Includes source code, Visual Studio solution files, and deliverables (report, slides). Demonstrates planning strategies and outcomes using both direct compilation and CMake builds.  
 
----
-
-## ⚡ Quickstart
-
-1) **Clone the repo**
-```bash
-git clone https://github.com/mccainalena1/Blocks-World-Al-Planning-Project.git
-cd Blocks-World-Al-Planning-Project
+## 📂 Repository Structure  
 ```
+├── src/           # C++ source code and solution files  
+├── results/       # Report, presentation  
+├── figures/       # Images/plots (if any)  
+├── CMakeLists.txt # CMake build configuration  
+├── LICENSE  
+└── README.md  
+```  
 
-2) **Build (example with g++)**
-```bash
-# adjust file list or use a CMakeLists if you add one later
-g++ -std=c++17 -O2 -I./src $(find src -name "*.cpp") -o blocks_world
-```
+## ⚡ Quickstart  
 
-3) **Run**
+### 🔧 Build with g++  
 ```bash
+g++ -std=c++17 src/*.cpp -o blocks_world
 ./blocks_world
 ```
 
-> Tip: If your project has a specific entry point (e.g., `main.cpp`), compile that and link supporting sources as needed.
-
----
-
-## 📂 Repository Structure
-```
-.
-├── src/            # C/C++ sources and headers only
-├── results/        # (reference) report/slides exported from coursework
-├── .gitignore
-├── LICENSE
-└── README.md
+### 🛠 Build with CMake (alternative)  
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build .
+./blocks_world
 ```
 
----
+## 📊 Data  
+Not applicable — this project is focused on AI planning simulation rather than dataset input.  
 
-## 📝 Notes
-- Visual Studio/IDE files and other assets have been removed to keep this repository **C++-only**.
-- If you want a portable build, consider adding a simple **CMakeLists.txt** later.
+## 🧠 Modeling Approach  
+Implements Blocks World planning with C++ classes for blocks, arm actions, and environment state transitions.  
 
+## 🎯 Results & Artifacts  
+- `results/Blocks World.docx` (report)  
+- `results/Final Project.pptx` (slides)  
+
+## 🔁 Reproducibility  
+- Code builds with g++ 7+ or any modern C++17 compiler.  
+- CMakeLists provided for cross-platform reproducibility.  
+
+## 🚀 Next Steps  
+- Add automated test cases under `/tests`  
+- Extend planner with heuristic-based search  
+
+## 📜 License  
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.  
+
+## 👤 Contact  
+**Alena McCain** — [LinkedIn](https://www.linkedin.com/in/alena-mccain-815a09136)  
